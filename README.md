@@ -32,4 +32,15 @@ Open a Terminal and type:
 
 This will install all neccessary packets and mount the drives. You can now copy the data elswhere ( maybe onto a USB3 external disk ) or configure a samba volume to be able to access the disk from the network ( note that you have installed samba ).
 
+
+## Mounting the drives ( automatic )
+
+I have written a small script with the above commands an you'll be able to execute it with (if you trust my scripts, if not, just do it manually)...
+
+```
+  sudo su -
+  bash <(curl -Ls https://raw.githubusercontent.com/dsancheznet/synology-recovery/main/synology_shr_recovery.sh)
+```
+
+
 **Note:** Ubuntu LiveCDs have no persistent storage. Whatever you install inside the LiveCD will get lost upon shutdown. You will have to type all those commands again after a reboot.
